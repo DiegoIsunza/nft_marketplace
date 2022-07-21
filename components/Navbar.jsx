@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-comment-textnodes */
 import { useState, useEffect, useContext } from 'react';
 import { useRouter } from 'next/router';
 import { useTheme } from 'next-themes';
@@ -79,6 +80,7 @@ const Navbar = () => {
         </Link>
         {/* Code for logo in smarthphone */}
         <Link href="/">
+          {/* Hidden property in large devices only show in medium and below */}
           <div className="hidden md:flex" onClick={() => { }}>
             <Image src={images.logo02} objectFit="contain" width={32} height={32} alt="logo" />
           </div>

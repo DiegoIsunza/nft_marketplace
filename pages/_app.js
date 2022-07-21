@@ -8,7 +8,10 @@ const MyApp = ({ Component, pageProps }) => (
   <ThemeProvider attribute="class">
     <div className="dark:bg-nft-dark bg-white min-h-screen">
       <Navbar />
-      <Component {...pageProps} />
+      {/* Every single page in the component */}
+      <div className="pt-65">
+        <Component {...pageProps} />
+      </div>
       <Footer />
     </div>
     <Script src="https://kit.fontawesome.com/87aa5eed58.js" crossOrigin="anonymous" />
